@@ -1,11 +1,8 @@
-name: Update Docker Hub Description
+# This workflow is disabled — no DockerHub account configured.
+# To re-enable, add DOCKERHUB_USERNAME and DOCKERHUB_PASSWORD secrets and update the repository name.
+name: Update Docker Hub Description (disabled)
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - Readme.md
-      - .github/workflows/dockerhub-description.yml
+  workflow_dispatch:
 jobs:
   dockerHubDescription:
     runs-on: ubuntu-latest
