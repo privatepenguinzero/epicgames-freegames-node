@@ -25,12 +25,9 @@ RUN apt-get update \
     fonts-thai-tlwg \
     fonts-kacst \
     fonts-freefont-ttf \
-    libxss1 \
-    # App dependencies
-    jq \
-    tzdata \
-    cron \
-    tini \
+    libxss1 libgbm1 libasound2 \
+    # Application dependencies
+    jq tzdata cron tini \
     && rm -rf /var/lib/apt/lists/*
 
 ########
