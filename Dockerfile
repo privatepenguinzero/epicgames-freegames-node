@@ -17,10 +17,10 @@ FROM base AS deps
 # and note the Chromium version available. Then go to https://pptr.dev/chromium-support
 # and find the latest version that supports that Chromium version, and update it in the package.json.
 RUN apk add --no-cache \
-    'chromium=~150' \
+    'chromium=150.0.7871.128-r0' \
     ca-certificates \
     ttf-freefont \
-    libgbm1 libasound2 \
+    mesa-dri-gallium alsa-lib \
     # Application dependencies
     jq tzdata tini
 
